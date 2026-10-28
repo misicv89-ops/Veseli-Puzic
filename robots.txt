@@ -1,0 +1,3 @@
+# DEMO: zabrana indeksiranja. Obrisati pre objave na pravom domenu.
+User-agent: *
+Disallow: /

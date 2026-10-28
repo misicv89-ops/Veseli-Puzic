@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Vrtić Veseli pužić Niš | Upis u toku</title>
+<meta name="description" content="Verifikovana predškolska ustanova u Nišu. Učenje kroz igru, senzorne radionice i topao prostor na dve lokacije: Naselje 9. maj i Duvanište.">
+<meta name="theme-color" content="#F9D339">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PU Veseli pužić">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="Veseli pužić – vrtić u Nišu | Upis je u toku">
+<meta property="og:description" content="Topao i siguran vrtić za decu od 1 do 6,5 godina, u Naselju 9. maj i na Duvaništu. Dođite da se upoznamo!">
+<!-- Zamenite KORISNIK svojim GitHub korisničkim imenom (og:image mora biti apsolutna adresa) -->
+<meta property="og:url" content="https://KORISNIK.github.io/veseli-puzic/">
+<meta property="og:image" content="https://KORISNIK.github.io/veseli-puzic/og-image-1200x630.jpg">
+<meta property="og:image:alt" content="Logo vrtića Veseli pužić, slogan „Mali koraci, velike radosti“ i fotografija dece u keceljama na radionici sa jabukama">
+<meta name="twitter:image" content="https://KORISNIK.github.io/veseli-puzic/og-image-1200x630.jpg">
+<link rel="canonical" href="https://KORISNIK.github.io/veseli-puzic/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="webclip-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&amp;family=Nunito:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#FFFAF0;}
+*{box-sizing:border-box;}
+a{color:#2F7A34;}
+a:hover{color:#D7352B;}
+@keyframes vp-pulse{0%{box-shadow:0 0 0 0 rgba(124,191,58,.75);}70%{box-shadow:0 0 0 10px rgba(124,191,58,0);}100%{box-shadow:0 0 0 0 rgba(124,191,58,0);}}
+@keyframes vp-crawl{0%{transform:translateX(0) scaleX(1);}10%{transform:translateX(8%) scaleX(1) scaleY(.96);}20%{transform:translateX(16%) scaleX(1);}30%{transform:translateX(24%) scaleX(1) scaleY(.96);}42%{transform:translateX(34%) scaleX(1);}50%{transform:translateX(34%) scaleX(-1);}60%{transform:translateX(26%) scaleX(-1) scaleY(.96);}70%{transform:translateX(18%) scaleX(-1);}80%{transform:translateX(10%) scaleX(-1) scaleY(.96);}92%{transform:translateX(0) scaleX(-1);}100%{transform:translateX(0) scaleX(1);}}
+@keyframes vp-ring{0%,55%,100%{transform:rotate(0);}60%{transform:rotate(-16deg);}65%{transform:rotate(14deg);}70%{transform:rotate(-12deg);}75%{transform:rotate(10deg);}80%{transform:rotate(-6deg);}85%{transform:rotate(0);}}
+@keyframes vp-callpulse{0%{box-shadow:0 6px 0 rgba(51,36,26,.12),0 0 0 0 rgba(215,53,43,.55);}70%{box-shadow:0 6px 0 rgba(51,36,26,.12),0 0 0 14px rgba(215,53,43,0);}100%{box-shadow:0 6px 0 rgba(51,36,26,.12),0 0 0 0 rgba(215,53,43,0);}}
+@media (prefers-reduced-motion:reduce){[data-wf="badge_dot is-live"],[data-wf="hero_snail is-crawling"],[data-wf="button is-call"],[data-wf="button is-call"] svg{animation:none!important;}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" data-wf="page-wrapper" style="container-type:inline-size;background:#FFFAF0;color:#33241A;font-family:'Nunito',sans-serif;font-size:17px;line-height:1.65;position:relative;overflow-x:clip">
+
+<!-- NAV -->
+<header ref="{{ headerRef }}" data-wf="navbar_component" style="position:sticky;top:0;z-index:50;transition:background-color .35s ease;background:#F9D339;box-shadow:0 4px 0 rgba(51,36,26,.08)">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:4px;right:8px;z-index:60;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">navbar_component</span></sc-if>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px">
+      <a href="#pocetna" data-wf="navbar_logo-link" aria-label="Veseli pužić — početna" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#33241A;border-radius:12px" style-focus="outline:3px solid #33241A;outline-offset:4px">
+        <svg viewBox="0 0 64 64" width="52" height="52" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#FDE98F" stroke="#33241A" stroke-width="2"></circle><rect x="9" y="40" width="44" height="10" rx="5" fill="#7CBF3A"></rect><circle cx="47" cy="37" r="7" fill="#7CBF3A"></circle><path d="M45 31 L43 21 M50 31 L54 22" stroke="#7CBF3A" stroke-width="2.5" stroke-linecap="round"></path><circle cx="43" cy="21" r="2" fill="#33241A"></circle><circle cx="54" cy="22" r="2" fill="#33241A"></circle><circle cx="27" cy="31" r="14" fill="#9A5A32"></circle><path d="M27 31 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 1 a8.5 8.5 0 1 1 15.5 -4" fill="none" stroke="#FFF1D1" stroke-width="2.5" stroke-linecap="round"></path><circle cx="49" cy="36" r="1.6" fill="#33241A"></circle></svg>
+        <span style="display:flex;flex-direction:column;line-height:1">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:24px;line-height:1">Veseli pužić</span>
+          <span style="font-size:13px;font-weight:700;color:#33241A;margin-top:4px">Predškolska ustanova · Niš</span>
+        </span>
+      </a>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Glavna navigacija" data-wf="navbar_menu" style="display:flex;align-items:center;gap:24px">
+          <div style="display:flex;align-items:center;gap:4px">
+            <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="6">
+              <a href="{{ l.href }}" data-wf="navbar_link" aria-current="{{ l.current }}" style="white-space:nowrap;background:{{ l.bg }};padding:8px 14px;border-radius:999px;color:#33241A;text-decoration:none;font-weight:700;font-size:16px" style-hover="background:#FDE98F;color:#33241A" style-focus="outline:3px solid #33241A;outline-offset:2px">{{ l.label }}</a>
+            </sc-for>
+          </div>
+          <a href="tel:+381640000000" aria-label="Pozovite nas: [064 000 0000]" data-wf="button" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;background:#D7352B;color:#FFFFFF;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12);transition:transform .15s ease" style-hover="transform:translateY(-2px);color:#FFFFFF" style-focus="outline:3px solid #33241A;outline-offset:3px"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>Pozovite</a>
+        </nav>
+      </sc-if>
+      <sc-if value="{{ narrow }}">
+        <button type="button" onClick="{{ toggleMenu }}" aria-label="Otvori meni" aria-expanded="{{ menuOpenStr }}" style="width:48px;height:48px;border-radius:999px;border:2px solid #33241A;background:#FFFAF0;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 0 rgba(51,36,26,.12)" style-focus="outline:3px solid #33241A;outline-offset:3px">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#33241A" stroke-width="2.5" stroke-linecap="round"><path d="{{ menuIcon }}"></path></svg>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ showMenu }}">
+    <div data-wf="navbar_menu is-mobile" style="position:absolute;top:80px;left:0;right:0;min-height:764px;background:#F9D339;border-top:2px dashed rgba(51,36,26,.25);padding:40px 24px;display:flex;flex-direction:column;gap:40px;overflow:hidden">
+      <nav aria-label="Mobilna navigacija" style="display:flex;flex-direction:column;gap:8px;position:relative;z-index:1">
+        <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="6">
+          <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:34px;line-height:1.2;color:#33241A;text-decoration:none;padding:8px 0;border-bottom:2px solid rgba(51,36,26,.12);display:flex;justify-content:space-between;align-items:center">{{ l.label }}<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#33241A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></a>
+        </sc-for>
+      </nav>
+      <div style="display:flex;flex-direction:column;gap:16px;position:relative;z-index:1">
+        <a href="#upis" onClick="{{ closeMenu }}" data-wf="button" style="display:flex;justify-content:center;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;background:#D7352B;color:#FFFFFF;font-weight:800;font-size:18px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12)">Upiši dete<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <svg viewBox="0 0 120 120" width="160" height="160" aria-hidden="true" style="position:absolute;right:-40px;bottom:-30px"><g stroke="#FFFAF0" stroke-width="8" stroke-linecap="round"><path d="M60 6v14 M60 100v14 M6 60h14 M100 60h14 M22 22l10 10 M88 88l10 10 M22 98l10-10 M88 32l10-10"></path></g><circle cx="60" cy="60" r="28" fill="#FDE98F"></circle></svg>
+    </div>
+  </sc-if>
+</header>
+
+<main style="text-align:{{ mText }}">
+<!-- HERO -->
+<section id="pocetna" data-wf="section_hero" data-screen-label="01 Početna" style="position:relative;background:#F9D339">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:8px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">section_hero › padding-global › container-large › padding-section-large</span></sc-if>
+  <svg viewBox="0 0 160 80" aria-hidden="true" style="position:absolute;top:24px;left:-30px;width:clamp(100px,6px + 10cqw,160px)"><g fill="#FFFAF0"><circle cx="50" cy="48" r="26"></circle><circle cx="86" cy="36" r="32"></circle><circle cx="122" cy="50" r="22"></circle><rect x="28" y="48" width="116" height="26" rx="13"></rect></g></svg>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px;position:relative">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto">
+      <div data-wf="padding-section-large" style="padding-top:clamp(16px,-4.8px + 5.333cqw,72px);padding-bottom:clamp(24px,14px + 2.5cqw,48px)">
+        <div data-wf="hero_component" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,30px + 2.5cqw,64px);align-items:center">
+          <div data-wf="hero_content" style="display: flex; flex-direction: column; align-items: {{ heroAlign }}; text-align: {{ heroText }}; gap: 24px; position: relative">
+            <span data-wf="badge" style="display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 8px;border-radius:999px;background:#FFFAF0;color:#33241A;font-weight:800;font-size:14px;box-shadow:0 4px 0 rgba(51,36,26,.12)"><span data-wf="badge_dot is-live" style="width:20px;height:20px;border-radius:999px;background:#2F7A34;display:inline-block;border:4px solid #DDEFC6;animation:vp-pulse 1.8s ease-out infinite"></span>Upis u toku</span>
+            <h1 data-wf="heading-style-hero" style="margin:0 auto;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(40px,31px + 2.29cqw,64px);line-height:1.05;letter-spacing:-.01em;text-wrap:balance">Mali koraci, <span style="position:relative;display:inline-block;white-space:nowrap">velike radosti<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;width:100%;height:14px"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T122 8 T142 8 T162 8 T182 8 T198 8" fill="none" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span></h1>
+            <p data-wf="text-size-large" style="margin:0;font-size:20px;line-height:1.55;max-width:520px;text-wrap:pretty">Topao, siguran i razigran vrtić u Nišu za decu od 1 do 6,5 godina. Čekamo vas na dve lokacije u Naselju 9. maj i na Duvaništu.</p>
+            <div data-wf="button-group" style="display:flex;flex-wrap:wrap;gap:16px;padding-top:8px;justify-content:{{ heroAlign }}">
+              <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><a href="#upis" data-wf="button" style="display:inline-flex;align-items:center;gap:8px;padding:16px 30px;border-radius:999px;background:#D7352B;color:#FFFFFF;font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12);border:2px solid #D7352B;transition:transform .15s ease" style-hover="transform:translateY(-2px);color:#FFFFFF" style-focus="outline:3px solid #33241A;outline-offset:3px">Upiši dete<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></a></sc-if><sc-if value="{{ narrow }}"><a href="tel:+381640000000" data-wf="button is-call" aria-label="Pozovite nas: [064 000 0000]" style="display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;border:2px solid #D7352B;background:#D7352B;color:#FFFFFF;font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12);animation:vp-callpulse 2s ease-out infinite"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:vp-ring 2s ease-in-out infinite;transform-origin:50% 50%"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>Pozovite</a></sc-if>
+              <a href="#galerija" data-wf="button is-outline" style="display:inline-flex;align-items:center;gap:8px;padding:16px 30px;border-radius:999px;background:transparent;color:#33241A;font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12);border:2px solid #2F7A34;transition:transform .15s ease" style-hover="transform:translateY(-2px);background:#FDE98F;color:#33241A" style-focus="outline:3px solid #33241A;outline-offset:3px">Pogledaj prostor</a>
+            </div>
+          <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 120 120" aria-hidden="true" style="position: absolute; top: -65px; left: 386px; width: 30%; z-index: 0"><g stroke="#FFFAF0" stroke-width="7" stroke-linecap="round"><path d="M60 4v16 M60 100v16 M4 60h16 M100 60h16 M20 20l11 11 M89 89l11 11 M20 100l11-11 M89 31l11-11"></path></g><circle cx="60" cy="60" r="28" fill="#FDE98F"></circle><circle cx="51" cy="56" r="3" fill="#33241A"></circle><circle cx="69" cy="56" r="3" fill="#33241A"></circle><path d="M50 67 Q60 76 70 67" fill="none" stroke="#33241A" stroke-width="3" stroke-linecap="round"></path></svg></sc-if></div>
+          <div data-wf="hero_collage" style="position:relative;width:100%;max-width:580px;justify-self:center;aspect-ratio:1/0.92">
+            
+            <figure data-wf="polaroid" style="position:absolute;left:0;top:14%;width:54%;margin:0;background:#FFFFFF;padding:10px 10px 14px;border-radius:22px;box-shadow:0 6px 0 rgba(51,36,26,.12);transform:rotate(-2deg);z-index:1">
+              <span aria-hidden="true" style="position:absolute;top:-12px;left:50%;width:84px;height:24px;margin-left:-42px;background:#FDE98F;opacity:.9;transform:rotate(-4deg);border-radius:3px"></span>
+              <img src="images/veseli-puzic-mali-kuvari-1.jpg" alt="Deca u keceljama pripremaju poslasticu ispred zida sa velikom jabukom i krošnjom" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px">
+            </figure>
+            <figure data-wf="polaroid" style="position:absolute;right:0;top:0;width:46%;margin:0;background:#FFFFFF;padding:10px 10px 14px;border-radius:22px;box-shadow:0 6px 0 rgba(51,36,26,.12);transform:rotate(2deg);z-index:2">
+              <span aria-hidden="true" style="position:absolute;top:-12px;left:50%;width:72px;height:24px;margin-left:-36px;background:#D3ECF9;opacity:.95;transform:rotate(5deg);border-radius:3px"></span>
+              <img src="images/veseli-puzic-radionica-za-stolom.jpg" alt="Deca za stolom tokom senzorne igre sa čašama i sličicama čula" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px">
+            </figure>
+            <figure data-wf="polaroid" style="position:absolute;right:6%;bottom:0;width:48%;margin:0;background:#FFFFFF;padding:10px 10px 14px;border-radius:22px;box-shadow:0 6px 0 rgba(51,36,26,.12);transform:rotate(1.5deg);z-index:3">
+              <span aria-hidden="true" style="position:absolute;top:-12px;left:50%;width:80px;height:24px;margin-left:-40px;background:#DDEFC6;opacity:.95;transform:rotate(-3deg);border-radius:3px"></span>
+              <img src="images/veseli-puzic-mali-kuvari-jabuke-2.jpg" alt="Troje malih kuvara u keceljama za stolom sa jabukama i rendom" style="display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px">
+            </figure>
+            <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 64 64" aria-hidden="true" data-wf="hero_snail is-crawling" style="position: absolute; left: 5px; width: 26%; z-index: 4; top: 377px; animation: vp-crawl 14s ease-in-out infinite; transform-origin: 50% 80%"><rect x="9" y="40" width="44" height="10" rx="5" fill="#7CBF3A"></rect><circle cx="47" cy="37" r="7" fill="#7CBF3A"></circle><path d="M45 31 L43 21 M50 31 L54 22" stroke="#7CBF3A" stroke-width="2.5" stroke-linecap="round"></path><circle cx="43" cy="21" r="2" fill="#33241A"></circle><circle cx="54" cy="22" r="2" fill="#33241A"></circle><circle cx="27" cy="31" r="14" fill="#9A5A32"></circle><path d="M27 31 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 1 a8.5 8.5 0 1 1 15.5 -4" fill="none" stroke="#FFF1D1" stroke-width="2.5" stroke-linecap="round"></path><circle cx="49" cy="36" r="1.6" fill="#33241A"></circle></svg></sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg data-wf="divider_wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:clamp(36px,22px + 3.6cqw,72px);margin-top:-1px"><path d="M0 48 C180 8 360 8 540 40 S900 80 1080 44 S1320 8 1440 32 V80 H0 Z" fill="#FFFAF0"></path></svg>
+</section>
+
+<!-- ABOUT -->
+<section id="o-nama" data-wf="section_about" data-screen-label="02 O nama" style="position:relative">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:8px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">section_about</span></sc-if>
+  <svg viewBox="0 0 60 64" aria-hidden="true" style="position:absolute;left:-14px;top:16px;width:clamp(56px,40px + 4cqw,96px);transform:rotate(-12deg);z-index:2"><circle cx="20" cy="38" r="18" fill="#D7352B"></circle><circle cx="40" cy="38" r="18" fill="#D7352B"></circle><path d="M30 22 Q31 12 36 6" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" fill="none"></path><ellipse cx="44" cy="12" rx="10" ry="5" fill="#7CBF3A" transform="rotate(-25 44 12)"></ellipse></svg>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto">
+      <div data-wf="padding-section-large" style="padding-top:clamp(64px,52px + 3.05cqw,96px);padding-bottom:clamp(64px,52px + 3.05cqw,96px);display:flex;flex-direction:column;gap:clamp(40px,26px + 3.6cqw,80px)">
+        <div data-wf="about_component" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(40px,30px + 2.5cqw,64px);align-items:center">
+          <figure data-wf="polaroid" style="position:relative;margin:0;background:#FFFFFF;padding:12px 12px 16px;border-radius:28px;box-shadow:0 6px 0 rgba(51,36,26,.12);transform:rotate(-2deg);max-width:540px;width:100%;justify-self:center">
+            <span aria-hidden="true" style="position:absolute;top:-13px;left:50%;width:110px;height:26px;margin-left:-55px;background:#FDE98F;opacity:.9;transform:rotate(-3deg);border-radius:3px"></span>
+            <img src="images/veseli-puzic-senzorna-igra-mirisi.jpg" alt="Vaspitačica daje detetu sa povezom na očima da pogodi miris" style="display:block;width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:18px">
+            
+          </figure>
+          <div data-wf="about_content" style="display:flex;flex-direction:column;align-items:{{ mAlign }};gap:24px">
+            <span data-wf="badge" style="display: inline-flex; padding: 6px 16px; border-radius: 999px; background: #DDEFC6; color: #33241A; font-weight: 800; font-size: 17px">O nama</span>
+            <h2 data-wf="heading-style-h1" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(34px,28.8px + 1.334cqw,48px);line-height:1.1;text-wrap:balance">Mesto gde se deca osećaju <span style="position:relative;display:inline-block;white-space:nowrap">kao kod kuće<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;width:100%;height:14px"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T122 8 T142 8 T162 8 T182 8 T198 8" fill="none" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span></h2>
+            <p data-wf="text-size-large" style="margin:0;font-size:20px;line-height:1.55;text-wrap:pretty">PU „Veseli pužić“ je verifikovana predškolska ustanova u Nišu. Naši zidovi su puni jabuka, krošnji i sunca a sobe pune dečjeg smeha.</p>
+            <p data-wf="text-size-regular" style="margin:0;color:#6B5646;text-wrap:pretty">Verujemo da deca najbolje uče kada se osećaju sigurno i voljeno. Zato svaki dan gradimo polako, korak po korak kao naš pužić. [Kratka priča o osnivanju vrtića i timu.</p>
+          </div>
+        </div>
+        <div data-wf="values_list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px">
+          <sc-for list="{{ values }}" as="v" hint-placeholder-count="4">
+            <div data-wf="value-card" style="background:{{ v.bg }};border-radius:28px;padding:32px 24px;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;flex-direction:column;gap:16px;align-items:{{ mAlign }}">
+              <span style="width:56px;height:56px;border-radius:999px;background:#FFFAF0;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#33241A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ v.icon }}"></path></svg></span>
+              <h3 data-wf="heading-style-h3" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.25">{{ v.title }}</h3>
+              <p data-wf="text-size-regular" style="margin:0;font-size:16px;line-height:1.6">{{ v.text }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg data-wf="divider_wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:clamp(36px,22px + 3.6cqw,72px);background:#FFFAF0"><path d="M0 40 C240 0 480 80 720 40 S1200 0 1440 40 V80 H0 Z" fill="#FFF1D1"></path></svg>
+
+<!-- PROGRAM -->
+<section id="program" data-wf="section_program" data-screen-label="03 Program" style="position:relative;background:#FFF1D1">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:8px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">section_program · background-color-alternate</span></sc-if>
+  <svg viewBox="0 0 120 110" aria-hidden="true" style="position:absolute;left:-30px;top:40px;width:clamp(80px,50px + 7cqw,150px)"><rect x="54" y="66" width="12" height="44" rx="5" fill="#9A5A32"></rect><circle cx="40" cy="50" r="28" fill="#2F7A34"></circle><circle cx="80" cy="48" r="30" fill="#7CBF3A"></circle><circle cx="60" cy="28" r="28" fill="#7CBF3A"></circle><circle cx="46" cy="40" r="5" fill="#D7352B"></circle><circle cx="78" cy="58" r="5" fill="#D7352B"></circle><circle cx="64" cy="18" r="5" fill="#D7352B"></circle></svg>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto">
+      <div data-wf="padding-section-large" style="padding-top:clamp(48px,40px + 2cqw,72px);padding-bottom:clamp(64px,52px + 3.05cqw,96px);display:flex;flex-direction:column;gap:clamp(40px,26px + 3.6cqw,80px)">
+        <div data-wf="section-header" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;max-width:720px;margin:0 auto">
+          <span data-wf="badge" style="display: inline-flex; padding: 6px 16px; border-radius: 999px; background: #FDE98F; color: #33241A; font-weight: 800; font-size: 17px">Program</span>
+          <h2 data-wf="heading-style-h1" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(34px,28.8px + 1.334cqw,48px);line-height:1.1;text-wrap:balance">Dan pun <span style="position:relative;display:inline-block;white-space:nowrap">igre<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;width:100%;height:14px"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T122 8 T142 8 T162 8 T182 8 T198 8" fill="none" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span> i otkrivanja</h2>
+          <p data-wf="text-size-large" style="margin:0;font-size:20px;line-height:1.55;color:#6B5646;text-wrap:pretty">Program prilagođavamo uzrastu, a svaki dan ima svoj ritam&nbsp; od jutarnjeg zagrljaja do popodnevne igre.</p>
+        </div>
+        <div data-wf="groups_list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+          <sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
+            <div data-wf="group-card" style="background:#FFFAF0;border-radius:28px;padding:32px;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;flex-direction:column;gap:16px;align-items:{{ mAlign }};position:relative;overflow:hidden">
+              <span aria-hidden="true" style="position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:999px;background:{{ g.bg }}"></span>
+              <span data-wf="badge" style="position:relative;display:inline-flex;padding:6px 14px;border-radius:999px;background:{{ g.bg }};color:#33241A;font-weight:800;font-size:14px">{{ g.age }}</span>
+              <h3 data-wf="heading-style-h2" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px;line-height:1.15">{{ g.title }}</h3>
+              <p style="margin:0;color:#6B5646">{{ g.text }}</p>
+            </div>
+          </sc-for>
+        </div>
+        <div data-wf="day_component" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,30px + 2.5cqw,64px);align-items:start">
+          <div style="display:flex;flex-direction:column;gap:24px">
+            <div>
+              <h3 data-wf="heading-style-h2" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px;line-height:1.15">Kako izgleda jedan dan</h3>
+              <p style="margin:8px 0 0;color:#6B5646">Pužić putuje kroz dan zajedno sa decom.</p>
+            </div>
+            <ol data-wf="day_timeline" style="list-style:none;margin:0;padding:0;position:relative">
+              <svg aria-hidden="true" viewBox="0 0 72 700" preserveAspectRatio="none" style="position:absolute;left:0;top:28px;bottom:56px;width:72px;height:calc(100% - 84px)"><path d="M36 0 Q60 35 36 70 T36 140 T36 210 T36 280 T36 350 T36 420 T36 490 T36 560 T36 630 T36 700" fill="none" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10" vector-effect="non-scaling-stroke"></path></svg>
+              <sc-for list="{{ day }}" as="d" hint-placeholder-count="8">
+                <li data-wf="day_item" style="position:relative;display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center;padding-bottom:16px">
+                  <span style="justify-self:center;width:64px;height:64px;border-radius:999px;background:{{ d.bg }};border:3px solid #FFFAF0;box-shadow:0 4px 0 rgba(51,36,26,.12);display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;position:relative;z-index:1">{{ d.time }}</span>
+                  <div style="background:#FFFAF0;border-radius:20px;padding:12px 20px;position:relative">
+                    <div style="font-weight:800;font-size:17px;line-height:1.3">{{ d.title }}</div>
+                    <div style="font-size:15px;line-height:1.5;color:#6B5646">{{ d.text }}</div>
+                    <sc-if value="{{ d.here }}">
+                      <svg viewBox="0 0 64 64" aria-hidden="true" style="position:absolute;right:-8px;top:-30px;width:52px"><rect x="9" y="40" width="44" height="10" rx="5" fill="#7CBF3A"></rect><circle cx="47" cy="37" r="7" fill="#7CBF3A"></circle><path d="M45 31 L43 21 M50 31 L54 22" stroke="#7CBF3A" stroke-width="2.5" stroke-linecap="round"></path><circle cx="43" cy="21" r="2" fill="#33241A"></circle><circle cx="54" cy="22" r="2" fill="#33241A"></circle><circle cx="27" cy="31" r="14" fill="#9A5A32"></circle><path d="M27 31 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 1 a8.5 8.5 0 1 1 15.5 -4" fill="none" stroke="#FFF1D1" stroke-width="2.5" stroke-linecap="round"></path><circle cx="49" cy="36" r="1.6" fill="#33241A"></circle></svg>
+                    </sc-if>
+                  </div>
+                </li>
+              </sc-for>
+            </ol>
+          </div>
+          <div data-wf="nutrition_card" style="position:relative;background:#FFFAF0;border-radius:28px;padding:40px 32px 32px;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;flex-direction:column;gap:16px;overflow:hidden;align-self:center">
+            <svg viewBox="0 0 60 64" aria-hidden="true" style="width:112px"><circle cx="20" cy="38" r="18" fill="#D7352B"></circle><circle cx="40" cy="38" r="18" fill="#D7352B"></circle><circle cx="18" cy="32" r="4" fill="#F8D7D2"></circle><path d="M30 22 Q31 12 36 6" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" fill="none"></path><ellipse cx="44" cy="12" rx="10" ry="5" fill="#7CBF3A" transform="rotate(-25 44 12)"></ellipse></svg>
+            <span data-wf="badge" style="align-self:{{ mAlign }};display:inline-flex;padding:6px 14px;border-radius:999px;background:#F8D7D2;color:#33241A;font-weight:800;font-size:14px">Ishrana</span>
+            <h3 data-wf="heading-style-h2" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px;line-height:1.15">Četiri obroka, puno voća</h3>
+            <p style="margin:0;color:#6B5646">Doručak, užina, ručak i popodnevna užina pripremaju se prema normativima za decu predškolskog uzrasta. Voće je svaki dan na stolu a jabuke su, naravno, omiljene.</p>
+            <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+              <li style="display:flex;gap:12px;align-items:center;font-weight:700"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#2F7A34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"></path></svg>Jelovnik objavljujemo nedeljno</li>
+              <li style="display:flex;gap:12px;align-items:center;font-weight:700"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#2F7A34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"></path></svg>Prilagođavamo se alergijama</li>
+              <li style="display:flex;gap:12px;align-items:center;font-weight:700"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#2F7A34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"></path></svg>[Napomena o kuhinji / dobavljaču]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg data-wf="divider_wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:clamp(36px,22px + 3.6cqw,72px);background:#FFF1D1"><path d="M0 32 C200 72 420 72 640 40 S1120 0 1440 44 V80 H0 Z" fill="#FFFAF0"></path></svg>
+
+<!-- GALLERY -->
+<section id="galerija" data-wf="section_gallery" data-screen-label="04 Galerija" style="position:relative">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:8px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">section_gallery</span></sc-if>
+  <svg viewBox="0 0 80 80" aria-hidden="true" style="position:absolute;right:16px;top:40px;width:clamp(48px,36px + 3cqw,80px)"><g fill="#4FB3E8"><ellipse cx="22" cy="60" rx="10" ry="8" transform="rotate(-20 22 60)"></ellipse><ellipse cx="58" cy="52" rx="10" ry="8" transform="rotate(-20 58 52)"></ellipse><rect x="28" y="14" width="5" height="46" rx="2"></rect><rect x="64" y="6" width="5" height="46" rx="2"></rect><path d="M28 14 L69 6 V16 L28 24 Z"></path></g></svg>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto">
+      <div data-wf="padding-section-large" style="padding-top:clamp(48px,40px + 2cqw,72px);padding-bottom:clamp(64px,52px + 3.05cqw,96px);display:flex;flex-direction:column;gap:clamp(40px,30px + 2.5cqw,64px)">
+        <div data-wf="section-header" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px;align-items:end">
+          <div style="display:flex;flex-direction:column;gap:16px;align-items:{{ mAlign }}">
+            <span data-wf="badge" style="display:inline-flex;padding:6px 16px;border-radius:999px;background:#D3ECF9;color:#33241A;font-weight:800;font-size:14px">Galerija i prostor</span>
+            <h2 data-wf="heading-style-h1" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(34px,28.8px + 1.334cqw,48px);line-height:1.1;text-wrap:balance">Zavirite u naš <span style="position:relative;display:inline-block;white-space:nowrap">prostor<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;width:100%;height:14px"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T122 8 T142 8 T162 8 T182 8 T198 8" fill="none" stroke="#9A5A32" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span></h2>
+          </div>
+          <p data-wf="text-size-large" style="margin:0;font-size:20px;line-height:1.55;color:#6B5646;text-wrap:pretty">Zidovi sa velikim crvenim jabukama, zelenim krošnjama i suncem — prostor smo osmislili kao slikovnicu u koju deca svakog jutra ulaze.</p>
+        </div>
+        <div data-wf="corners_list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px">
+          <sc-for list="{{ corners }}" as="c" hint-placeholder-count="4">
+            <div data-wf="corner-card" style="display:flex;gap:16px;align-items:center;background:{{ c.bg }};border-radius:28px;padding:16px 20px 16px 16px;box-shadow:0 6px 0 rgba(51,36,26,.12)">
+              <span style="flex:none;width:56px;height:56px;border-radius:999px;background:#FFFAF0;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#33241A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="{{ c.icon }}"></path></svg></span>
+              <div>
+                <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:20px;line-height:1.2">{{ c.title }}</div>
+                <div style="font-size:14px;line-height:1.45">{{ c.text }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <div data-wf="gallery_filters" role="group" aria-label="Filtriraj fotografije" style="display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ filters }}" as="f" hint-placeholder-count="5">
+              <button type="button" onClick="{{ f.onClick }}" aria-pressed="{{ f.pressed }}" style="padding:10px 20px;border-radius:999px;border:2px solid #33241A;background:{{ f.bg }};color:{{ f.color }};font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;cursor:pointer;transition:transform .15s ease" style-hover="transform:translateY(-2px)" style-focus="outline:3px solid #4FB3E8;outline-offset:2px">{{ f.label }}</button>
+            </sc-for>
+          </div>
+          <div data-wf="gallery_masonry" style="columns:4 160px;column-gap:16px">
+            <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="10">
+              <figure data-wf="gallery_item" style="break-inside:avoid;margin:0 0 16px;border-radius:24px;overflow:hidden;box-shadow:0 6px 0 rgba(51,36,26,.12);background:#FFFFFF;padding:8px">
+                <div style="border-radius:18px;overflow:hidden">
+                  <sc-if value="{{ g.src }}"><img src="{{ g.src }}" alt="{{ g.alt }}" loading="lazy" style="display:block;width:100%;aspect-ratio:{{ g.ar }};object-fit:cover;transition:transform .3s ease" style-hover="transform:scale(1.05)"></sc-if><sc-if value="{{ g.noSrc }}"><div role="img" aria-label="{{ g.alt }}" style="aspect-ratio:{{ g.ar }};background:repeating-linear-gradient(135deg,#F6E7C4 0 12px,#F1DEB4 12px 24px);display:flex;align-items:flex-end;padding:10px;transition:transform .3s ease" style-hover="transform:scale(1.05)"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;color:#6B5646;background:#FFFAF0;padding:2px 6px;border-radius:4px">{{ g.label }}</span></div></sc-if>
+                </div>
+                <figcaption style="display:flex;justify-content:space-between;gap:8px;padding:8px 6px 2px;font-size:13px;font-weight:700;color:#6B5646"><span>{{ g.cat }}</span></figcaption>
+              </figure>
+            </sc-for>
+          </div>
+        </div>
+        <div data-wf="gallery_locations" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px">
+          <sc-for list="{{ locations }}" as="l" hint-placeholder-count="2">
+            <a href="{{ l.mapUrl }}" target="_blank" rel="noopener" data-wf="location-card is-gallery" style="display:grid;grid-template-columns:{{ locCols }};gap:20px;align-items:center;background:#FFF1D1;border-radius:28px;padding:16px;box-shadow:0 6px 0 rgba(51,36,26,.12);text-decoration:none;color:#33241A;transition:transform .15s ease" style-hover="transform:translateY(-2px);color:#33241A" style-focus="outline:3px solid #33241A;outline-offset:3px">
+              <iframe src="{{ l.mapSrc }}" title="{{ l.mapAlt }}" loading="lazy" tabindex="-1" referrerpolicy="no-referrer-when-downgrade" style="display:block;width:100%;aspect-ratio:{{ locMapAr }};border:0;border-radius:20px;background:#D3ECF9;pointer-events:none"></iframe>
+              <div style="display:flex;flex-direction:column;gap:6px;align-items:{{ mAlign }};text-align:{{ mText }};padding:{{ locPad }}">
+                <span style="font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#6B5646">Lokacija {{ l.n }}</span>
+                <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:26px;line-height:1.1">{{ l.name }}</span>
+                <span style="font-size:15px">{{ l.address }}</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:15px;color:#2F7A34">Vidi na mapi<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#2F7A34" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></span>
+              </div>
+            </a>
+          </sc-for>
+        </div>
+        <div data-wf="instagram_cta" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:{{ igJustify }};flex-direction:{{ igDir }};text-align:{{ mText }};background:#FDE98F;border-radius:28px;padding:32px;box-shadow:0 6px 0 rgba(51,36,26,.12)">
+          <div style="display:flex;gap:16px;align-items:center;flex-direction:{{ igDir }}">
+            <span style="flex:none;width:60px;height:60px;border-radius:999px;background:#FFFAF0;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#33241A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z M12 8.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7z M17.5 6.5h.01"></path></svg></span>
+            <div>
+              <div style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:26px;line-height:1.15">Svaki dan nova priča</div>
+              <div style="font-size:16px">Pratite nas na Instagramu&nbsp;&nbsp;<strong>@vrtic_veseli_puzic</strong></div>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/vrtic_veseli_puzic" target="_blank" rel="noopener" data-wf="button is-secondary" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;background:#2F7A34;color:#FFFFFF;font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 6px 0 rgba(51,36,26,.12);transition:transform .15s ease" style-hover="transform:translateY(-2px);color:#FFFFFF" style-focus="outline:3px solid #33241A;outline-offset:3px">Otvori Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg data-wf="divider_wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:clamp(36px,22px + 3.6cqw,72px);background:#FFFAF0"><path d="M0 44 C260 4 520 4 760 36 S1180 76 1440 30 V80 H0 Z" fill="#4FB3E8"></path></svg>
+
+<!-- ENROLL -->
+<section id="upis" data-wf="section_enroll" data-screen-label="05 Upis" style="position:relative;background:#4FB3E8;overflow:hidden">
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:8px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#33241A;color:#FFFAF0;padding:2px 8px;border-radius:6px">section_enroll · background-color-sky</span></sc-if>
+  <svg viewBox="0 0 160 80" aria-hidden="true" style="position:absolute;top:40px;right:6%;width:clamp(110px,80px + 8cqw,200px)"><g fill="#FFFFFF"><circle cx="50" cy="48" r="26"></circle><circle cx="86" cy="36" r="32"></circle><circle cx="122" cy="50" r="22"></circle><rect x="28" y="48" width="116" height="26" rx="13"></rect></g></svg>
+  <svg viewBox="0 0 160 80" aria-hidden="true" style="position:absolute;top:44%;left:-40px;width:clamp(100px,70px + 7cqw,180px)"><g fill="#FFFFFF"><circle cx="50" cy="48" r="26"></circle><circle cx="86" cy="36" r="32"></circle><circle cx="122" cy="50" r="22"></circle><rect x="28" y="48" width="116" height="26" rx="13"></rect></g></svg>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px;position:relative">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto">
+      <div data-wf="padding-section-large" style="padding-top:clamp(48px,40px + 2cqw,72px);padding-bottom:clamp(64px,52px + 3.05cqw,96px);display:flex;flex-direction:column;gap:clamp(40px,30px + 2.5cqw,64px)">
+        <div data-wf="section-header" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;max-width:720px;margin:0 auto">
+          <span data-wf="badge" style="display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 8px;border-radius:999px;background:#FFFAF0;color:#33241A;font-weight:800;font-size:14px;box-shadow:0 4px 0 rgba(51,36,26,.12)"><span data-wf="badge_dot is-live" style="width:20px;height:20px;border-radius:999px;background:#2F7A34;display:inline-block;border:4px solid #DDEFC6;animation:vp-pulse 1.8s ease-out infinite"></span>Školska 2026/27.</span>
+          <h2 data-wf="heading-style-h1" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(34px,28.8px + 1.334cqw,48px);line-height:1.1;text-wrap:balance">Upis je <span style="position:relative;display:inline-block;white-space:nowrap">u toku<svg aria-hidden="true" viewBox="0 0 200 14" preserveAspectRatio="none" style="position:absolute;left:0;bottom:-4px;width:100%;height:14px"><path d="M2 8 Q12 2 22 8 T42 8 T62 8 T82 8 T102 8 T122 8 T142 8 T162 8 T182 8 T198 8" fill="none" stroke="#33241A" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span></h2>
+          <p data-wf="text-size-large" style="margin:0;font-size:20px;line-height:1.55;text-wrap:pretty">Četiri jednostavna koraka do prvog dana u vrtiću. Pošaljite upit, a mi ćemo vas pozvati da se upoznamo.</p>
+        </div>
+        <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+          <ol data-wf="steps_list" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;position:relative">
+            <span aria-hidden="true" style="position:absolute;top:38px;left:12.5%;right:12.5%;border-top:4px dashed #FFFFFF"></span>
+            <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+              <li data-wf="step" style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;position:relative">
+                <span style="width:80px;height:80px;border-radius:999px;background:#FFFAF0;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:36px;line-height:1">{{ s.n }}</span>
+                <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.25">{{ s.title }}</div>
+                <div style="font-size:16px;line-height:1.55;max-width:240px">{{ s.text }}</div>
+              </li>
+            </sc-for>
+          </ol>
+        </sc-if>
+        <sc-if value="{{ narrow }}">
+          <ol data-wf="steps_list" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:24px;position:relative">
+            <span aria-hidden="true" style="position:absolute;top:32px;bottom:32px;left:30px;border-left:4px dashed #FFFFFF"></span>
+            <sc-for list="{{ steps }}" as="s" hint-placeholder-count="4">
+              <li data-wf="step" style="display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:start;position:relative">
+                <span style="width:64px;height:64px;border-radius:999px;background:#FFFAF0;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;align-items:center;justify-content:center;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;line-height:1">{{ s.n }}</span>
+                <div style="padding-top:6px">
+                  <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.25">{{ s.title }}</div>
+                  <div style="font-size:16px;line-height:1.55">{{ s.text }}</div>
+                </div>
+              </li>
+            </sc-for>
+          </ol>
+        </sc-if>
+        <div data-wf="enroll_component" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:24px;align-items:start">
+          <div style="display:flex;flex-direction:column;gap:24px">
+            <div data-wf="docs-card" style="text-align:{{ mText }};background:#FFF1D1;border-radius:28px;padding:32px;box-shadow:0 6px 0 rgba(51,36,26,.12)">
+              <h3 data-wf="heading-style-h3" style="margin:0 0 16px;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.25">Potrebna dokumentacija</h3>
+              <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:{{ docListGap }}">
+                <sc-for list="{{ docs }}" as="d" hint-placeholder-count="5">
+                  <li style="display:flex;gap:{{ docGap }};align-items:{{ docAlign }};flex-direction:{{ docDir }};font-size:16px;line-height:1.5"><span style="flex:none;width:26px;height:26px;border-radius:999px;background:#DDEFC6;display:flex;align-items:center;justify-content:center;margin-top:1px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2F7A34" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"></path></svg></span>{{ d }}</li>
+                </sc-for>
+              </ul>
+            </div>
+            <div data-wf="price-card" style="background:#FDE98F;border-radius:28px;padding:32px;box-shadow:0 6px 0 rgba(51,36,26,.12);display:flex;flex-direction:column;gap:12px;align-items:{{ mAlign }};text-align:{{ mText }}">
+              <h3 data-wf="heading-style-h3" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.25">Cena boravka</h3>
+              <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;justify-content:{{ mAlign }}"><span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:44px;line-height:1">[00.000]</span><span style="font-weight:700">RSD mesečno</span></div>
+              <p style="margin:0;font-size:16px;line-height:1.55">Cena uključuje četiri obroka, sve aktivnosti i materijal za rad. [Popusti za braću i sestre / subvencije — potvrditi.]</p>
+            </div>
+          </div>
+          <div data-wf="form-card" style="background:#FFFFFF;border-radius:28px;padding:clamp(24px,16px + 2cqw,40px);box-shadow:0 6px 0 rgba(51,36,26,.12)">
+            <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+              <form data-wf="form_component" onSubmit="{{ submit }}" style="text-align:{{ mText }};display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+                <div style="grid-column:1/-1">
+                  <h3 data-wf="heading-style-h2" style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px;line-height:1.15">Pošaljite upit za upis</h3>
+                  <p style="margin:4px 0 8px;font-size:15px;color:#6B5646">Javljamo se u roku od [24 sata] radnim danima.</p>
+                </div>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px">Ime i prezime roditelja<input required="" type="text" name="roditelj" placeholder="npr. Jelena Petrović" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px">Telefon<input required="" type="tel" name="telefon" placeholder="06x xxx xxxx" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;grid-column:1/-1">E-mail<input type="email" name="email" placeholder="ime@primer.rs" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px">Ime deteta<input type="text" name="dete" placeholder="npr. Luka" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px">Uzrast deteta<input type="text" name="uzrast" placeholder="npr. 3 godine" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;grid-column:1/-1">Lokacija<select name="lokacija" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"><option>Naselje 9. maj — Jastrebačkih partizana 10</option><option>Duvanište — Majakovskog 34</option><option>Svejedno mi je</option></select></label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;grid-column:1/-1">Poruka<textarea name="poruka" rows="4" placeholder="Željeni datum polaska, pitanja…" style="font-family:'Nunito',sans-serif;font-size:16px;color:#33241A;padding:14px 16px;border-radius:12px;border:2px solid #E9D6AE;background:#FFFAF0;outline:none;resize:vertical" style-focus="border-color:#2F7A34;box-shadow:0 0 0 4px #FDE98F"></textarea></label>
+                <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:{{ igJustify }};flex-direction:{{ formRowDir }};padding-top:8px">
+                  <span style="font-size:14px;color:#6B5646;max-width:280px">Podatke koristimo samo da bismo vam odgovorili.</span>
+                  <button type="submit" data-wf="button" style="width:{{ submitW }};justify-content:center;display:inline-flex;align-items:center;gap:8px;padding:16px 32px;border-radius:999px;background:#D7352B;color:#FFFFFF;font-family:'Nunito',sans-serif;font-weight:800;font-size:17px;border:2px solid #D7352B;box-shadow:0 6px 0 rgba(51,36,26,.12);cursor:pointer;transition:transform .15s ease" style-hover="transform:translateY(-2px)" style-focus="outline:3px solid #33241A;outline-offset:3px">Pošalji upit</button>
+                </div>
+              </form>
+            </sc-if>
+            <sc-if value="{{ sent }}">
+              <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;padding:40px 8px">
+                <span style="width:80px;height:80px;border-radius:999px;background:#DDEFC6;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#2F7A34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"></path></svg></span>
+                <h3 style="margin:0;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:32px;line-height:1.15">Hvala, upit je poslat!</h3>
+                <p style="margin:0;color:#6B5646;max-width:360px">Javićemo vam se uskoro da dogovorimo upoznavanje i obilazak vrtića.</p>
+                <button type="button" onClick="{{ reset }}" style="padding:12px 24px;border-radius:999px;border:2px solid #2F7A34;background:transparent;color:#33241A;font-family:'Nunito',sans-serif;font-weight:800;font-size:16px;cursor:pointer">Pošalji novi upit</button>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div ref="{{ snailWrapRef }}" data-wf="scroll_snail" style="position:fixed;right:clamp(6px,0px + 1.4cqw,24px);top:14vh;height:72vh;width:52px;z-index:45;pointer-events:none;opacity:0;transition:opacity .3s ease">
+  <span aria-hidden="true" style="position:absolute;left:50%;top:0;bottom:0;margin-left:-2px;border-left:4px dotted rgba(154,90,50,.4)"></span>
+  <span ref="{{ trailRef }}" aria-hidden="true" style="position:absolute;left:50%;top:0;height:0;width:6px;margin-left:-3px;border-radius:999px;background:#7CBF3A"></span>
+  <button type="button" ref="{{ snailRef }}" onClick="{{ snailClick }}" aria-label="{{ snailLabel }}" title="{{ snailLabel }}" style="position:absolute;left:0;top:0;width:52px;height:52px;margin-top:-26px;border-radius:999px;background:#F9D339;border:2px solid #33241A;box-shadow:0 4px 0 rgba(51,36,26,.15);pointer-events:auto;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;transition:transform .15s ease" style-hover="transform:scale(1.12)" style-focus="outline:3px solid #33241A;outline-offset:3px">
+    <svg viewBox="0 0 64 64" width="40" height="40" aria-hidden="true" style="transform:rotate(90deg)"><rect x="9" y="40" width="44" height="10" rx="5" fill="#7CBF3A"></rect><circle cx="47" cy="37" r="7" fill="#7CBF3A"></circle><path d="M45 31 L43 21 M50 31 L54 22" stroke="#7CBF3A" stroke-width="2.5" stroke-linecap="round"></path><circle cx="43" cy="21" r="2" fill="#33241A"></circle><circle cx="54" cy="22" r="2" fill="#33241A"></circle><circle cx="27" cy="31" r="14" fill="#9A5A32"></circle><path d="M27 31 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 1 a8.5 8.5 0 1 1 15.5 -4" fill="none" stroke="#FFF1D1" stroke-width="2.5" stroke-linecap="round"></path><circle cx="49" cy="36" r="1.6" fill="#33241A"></circle></svg>
+  </button>
+</div>
+
+<!-- FOOTER -->
+<footer id="kontakt" data-wf="footer_component" style="text-align:{{ mText }};position:relative;background:#2F7A34;color:#FFFFFF">
+  <svg data-wf="divider_wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" style="display:block;width:100%;height:clamp(36px,22px + 3.6cqw,72px);background:#4FB3E8;margin-top:-1px"><path d="M0 48 C180 8 360 8 540 40 S900 80 1080 44 S1320 8 1440 32 V80 H0 Z" fill="#2F7A34"></path></svg>
+  <sc-if value="{{ showLabels }}"><span style="position:absolute;top:80px;left:8px;z-index:40;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;background:#FFFAF0;color:#33241A;padding:2px 8px;border-radius:6px">footer_component · background-color-tertiary</span></sc-if>
+  <div data-wf="padding-global" style="padding-left:24px;padding-right:24px">
+    <div data-wf="container-large" style="max-width:1200px;margin:0 auto;padding-top:clamp(32px,24px + 2cqw,56px);padding-bottom:32px;display:flex;flex-direction:column;gap:40px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px">
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:{{ mAlign }}">
+          <div style="display:flex;align-items:center;gap:12px;justify-content:{{ mAlign }}">
+            <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#F9D339"></circle><rect x="9" y="40" width="44" height="10" rx="5" fill="#7CBF3A"></rect><circle cx="47" cy="37" r="7" fill="#7CBF3A"></circle><path d="M45 31 L43 21 M50 31 L54 22" stroke="#7CBF3A" stroke-width="2.5" stroke-linecap="round"></path><circle cx="43" cy="21" r="2" fill="#33241A"></circle><circle cx="54" cy="22" r="2" fill="#33241A"></circle><circle cx="27" cy="31" r="14" fill="#9A5A32"></circle><path d="M27 31 m-2 0 a2 2 0 1 1 4 0 a5 5 0 1 1 -9 1 a8.5 8.5 0 1 1 15.5 -4" fill="none" stroke="#FFF1D1" stroke-width="2.5" stroke-linecap="round"></path><circle cx="49" cy="36" r="1.6" fill="#33241A"></circle></svg>
+            <span style="font-family:'Baloo 2',sans-serif;font-weight:800;font-size:26px;line-height:1">Veseli pužić</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.6;max-width:300px">Verifikovana predškolska ustanova u Nišu. Mali koraci, velike radosti — svakog dana.</p>
+        </div>
+        <nav aria-label="Linkovi u podnožju" style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:20px;margin-bottom:4px">Stranica</div>
+          <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="6">
+            <a href="{{ l.href }}" style="color:#FFFFFF;text-decoration:none;font-weight:700;font-size:16px;align-self:{{ mAlign }};border-radius:4px" style-hover="text-decoration:underline;color:#FFFFFF" style-focus="outline:3px solid #F9D339;outline-offset:2px">{{ l.label }}</a>
+          </sc-for>
+        </nav>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:20px">Lokacije</div>
+          <sc-for list="{{ locations }}" as="l" hint-placeholder-count="2">
+            <div style="font-size:16px;line-height:1.5"><strong>{{ l.name }}</strong><br>{{ l.address }}, Niš</div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:20px">Kontakt</div>
+          <span style="font-size:16px">[064 000 0000]</span>
+          <span style="font-size:16px">[info@veselipuzic.rs]</span>
+          <a href="https://www.instagram.com/vrtic_veseli_puzic" target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:800;font-size:16px" style-hover="color:#F9D339">@vrtic_veseli_puzic</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;border-top:2px dashed rgba(255,255,255,.35);padding-top:24px;font-size:14px">
+        <span>© 2026 PU „Veseli pužić“, Niš. Sva prava zadržana.</span>
+        <a href="#pocetna" style="color:#FFFFFF;font-weight:700" style-hover="color:#F9D339">Nazad na vrh ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Webflow&quot;},&quot;scrollAnim&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prikaz&quot;},&quot;menuOpen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prikaz&quot;},&quot;mobile&quot;:{&quot;editor&quot;:null,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { narrowW: false, menuOpen: false, filter: 'Svi', sent: false };
+  rootRef = React.createRef();
+  componentDidMount() {
+    this.setupReveal();
+    window.addEventListener('scroll', this.onScroll, { capture: true, passive: true });
+    window.addEventListener('resize', this.onScroll);
+    this.onScroll();
+    const el = this.rootRef.current;
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    this.ro = new ResizeObserver(e => {
+      const n = e[0].contentRect.width < 1024;
+      if (n !== this.state.narrowW) this.setState({ narrowW: n });
+    });
+    this.ro.observe(el);
+  }
+  headerRef = React.createRef();
+  snailRef = React.createRef(); snailWrapRef = React.createRef(); trailRef = React.createRef();
+  scroller() {
+    let p = this.rootRef.current && this.rootRef.current.parentElement;
+    while (p && p !== document.body) {
+      const o = getComputedStyle(p).overflowY;
+      if ((o === 'auto' || o === 'scroll') && p.scrollHeight > p.clientHeight) return p;
+      p = p.parentElement;
+    }
+    return null;
+  }
+  onScroll = () => {
+    const root = this.rootRef.current, s = this.snailRef.current, w = this.snailWrapRef.current, t = this.trailRef.current;
+    if (!root) return;
+    const hd = this.headerRef.current;
+    if (hd) {
+      const navB = hd.getBoundingClientRect().bottom + 1;
+      const map = { pocetna: '#F9D339', 'o-nama': '#FFFAF0', program: '#FFF1D1', galerija: '#FFFAF0', upis: '#4FB3E8', kontakt: '#FFF1D1' };
+      let cur = 'pocetna';
+      Object.keys(map).forEach(id => { const el = root.querySelector('#' + id); if (el && el.getBoundingClientRect().top <= navB) cur = id; });
+      hd.style.backgroundColor = map[cur];
+      const sc = this.scroller();
+      const y = sc ? sc.getBoundingClientRect().top - root.getBoundingClientRect().top : -root.getBoundingClientRect().top;
+      const narrow = this.props.mobile ?? this.state.narrowW;
+      const open = this.state.menuOpen || !!this.props.menuOpen;
+      const last = this.lastY ?? y;
+      let hide = this.navHidden || false;
+      if (!narrow || open || y < 240) hide = false;
+      else if (y > last + 4) hide = true;
+      else if (y < last - 4) hide = false;
+      if (Math.abs(y - last) > 4 || hide !== this.navHidden) this.lastY = y;
+      if (hide !== this.navHidden) {
+        this.navHidden = hide;
+        hd.style.transition = 'background-color .35s ease, transform .3s ease';
+        hd.style.transform = hide ? 'translateY(-110%)' : 'translateY(0)';
+      }
+      if (cur !== this.state.active) this.setState({ active: cur });
+    }
+    if (!s || !w) return;
+    const r = root.getBoundingClientRect(), vh = window.innerHeight;
+    const prog = Math.max(0, Math.min(1, -r.top / Math.max(1, r.height - vh)));
+    const trackH = w.clientHeight;
+    s.style.top = (prog * trackH) + 'px';
+    if (t) t.style.height = (prog * trackH) + 'px';
+    w.style.opacity = (-r.top > vh * 0.5 && r.bottom > 0) ? '1' : '0';
+    s.style.pointerEvents = w.style.opacity === '1' ? 'auto' : 'none';
+  };
+  scrollToTop = () => {
+    const root = this.rootRef.current; if (!root) return;
+    const sc = this.scroller();
+    const behavior = (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) ? 'auto' : 'smooth';
+    if (sc) sc.scrollTo({ top: sc.scrollTop + root.getBoundingClientRect().top - sc.getBoundingClientRect().top, behavior });
+    else window.scrollTo({ top: window.scrollY + root.getBoundingClientRect().top, behavior });
+  };
+  componentDidUpdate() { this.setupReveal(); }
+  setupReveal() {
+    const root = this.rootRef.current;
+    if (!root || this.props.scrollAnim === false || typeof IntersectionObserver === 'undefined') return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!this.io) {
+      this.io = new IntersectionObserver(entries => entries.forEach(en => {
+        if (en.isIntersecting) { en.target.style.opacity = '1'; en.target.style.translate = '0 0'; this.io.unobserve(en.target); }
+      }), { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }
+    const sel = ['hero_content', 'hero_collage', 'section-header', 'value-card', 'group-card', 'day_item', 'nutrition_card', 'corner-card', 'gallery_item', 'location-card is-gallery', 'instagram_cta', 'step', 'docs-card', 'price-card', 'form-card'].map(n => `[data-wf="${n}"]`).join(',');
+    const about = root.querySelectorAll('[data-wf="about_component"] > *');
+    [...root.querySelectorAll(sel), ...about].forEach(el => {
+      if (el.dataset.reveal) return;
+      el.dataset.reveal = '1';
+      const idx = el.parentElement ? [...el.parentElement.children].indexOf(el) : 0;
+      el.style.opacity = '0';
+      el.style.translate = '0 28px';
+      el.style.transition = (el.style.transition ? el.style.transition + ', ' : '') + 'opacity .7s ease, translate .7s cubic-bezier(.2,.7,.2,1)';
+      el.style.transitionDelay = (idx % 4) * 90 + 'ms';
+      this.io.observe(el);
+    });
+  }
+  componentWillUnmount() {
+    this.ro && this.ro.disconnect(); this.io && this.io.disconnect();
+    window.removeEventListener('scroll', this.onScroll, { capture: true });
+    window.removeEventListener('resize', this.onScroll);
+  }
+  renderVals() {
+    const I = {
+      shield: 'M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z M9 12l2 2 4-4',
+      heart: 'M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z',
+      pin: 'M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z M12 12.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5z',
+      bus: 'M5 4h14v12H5z M5 10h14 M8 19v-3 M16 19v-3 M8 13h.01 M16 13h.01',
+      users: 'M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M3 20c0-3.5 2.5-6 6-6s6 2.5 6 6 M16 11a2.5 2.5 0 1 0 0-5 M17 14c2.5.5 4 2.5 4 6',
+      ball: 'M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18z M3.5 9.5c5 1 12 1 17 0 M3.5 14.5c5-1 12-1 17 0',
+      sun: 'M12 8a4 4 0 1 0 0 8a4 4 0 0 0 0-8z M12 2v2 M12 20v2 M4.9 4.9l1.4 1.4 M17.7 17.7l1.4 1.4 M2 12h2 M20 12h2 M4.9 19.1l1.4-1.4 M17.7 6.3l1.4-1.4',
+      eye: 'M3 11c3 4 15 4 18 0 M6.5 13.5l-1.5 2 M12 15v2.5 M17.5 13.5l1.5 2',
+      apple: 'M12 8c-3-2-7 0-7 5s3 8 5 8c1 0 1.5-.5 2-.5s1 .5 2 .5c2 0 5-3 5-8s-4-7-7-5z M12 8c0-2 1-4 3-5',
+      music: 'M9 18V6l10-2v12 M9 18a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z M19 16a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z',
+      smile: 'M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18z M8 14c2 2 6 2 8 0 M9 9.5h.01 M15 9.5h.01',
+      balloon: 'M12 3c-3.5 0-6 2.7-6 6 0 4 3 7 6 7s6-3 6-7c0-3.3-2.5-6-6-6z M11 16h2 M12 16c0 2-2 3-1 5',
+      brush: 'M4 20c3 0 4-1 4-3a2 2 0 0 0-4 0c0 1-1 2-2 2 M8 15L19 4l2 2L10 17',
+      tree: 'M12 21v-6 M12 15c-4 0-6-2.5-6-5.5S9 4 12 4s6 2.5 6 5.5S16 15 12 15z',
+      book: 'M4 5c3-1 6-1 8 1v14c-2-2-5-2-8-1z M20 5c-3-1-6-1-8 1v14c2-2 5-2 8-1z',
+    };
+    const narrow = this.props.mobile ?? this.state.narrowW;
+    const menuOpen = this.state.menuOpen || !!this.props.menuOpen;
+    const filters = ['Svi', 'Prostor', 'Radionice', 'Proslave', 'Predstave'];
+    const gallery = [
+      { cat: 'Prostor', src: 'images/veseli-puzic-prostor-zid-jabuka.jpg', ar: '9/16', alt: 'Dečak sedi ispred zida oslikanog velikom crvenom jabukom i krošnjom' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-mali-kuvari-jabuke-2.jpg', ar: '4/3', alt: 'Mali kuvari u keceljama za stolom sa jabukama' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-radionica-jabuke-crtanje.jpg', ar: '3/4', alt: 'Deca crtaju i slikaju šipak na likovnoj radionici' },
+      { cat: 'Predstave', src: 'images/veseli-puzic-predstava-meda-bere-jagode.jpg', ar: '9/16', alt: 'Devojčica u kostimu mede na predstavi „Meda bere jagode“' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-senzorna-igra-povez-1.jpg', ar: '4/3', alt: 'Deca sa povezom na očima pogađaju igračku u kutiji' },
+      { cat: 'Prostor', src: 'images/veseli-puzic-prostor-muzicki-kutak.jpg', ar: '9/16', alt: 'Deca u muzičkom kutku ispod zida sa notama' },
+      { cat: 'Proslave', src: 'images/veseli-puzic-proslava-nastup.jpg', ar: '9/16', alt: 'Devojčice nastupaju pred drugarima na proslavi sa disko kuglama' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-senzorna-igra-mirisi.jpg', ar: '4/3', alt: 'Vaspitačica pomaže detetu da pogodi miris zatvorenih očiju' },
+      { cat: 'Prostor', src: 'images/veseli-puzic-prostor-cvetici-na-zidu.jpg', ar: '3/4', alt: 'Deca lepe papirne cvetiće sa imenima na vrata' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-mali-kuvari-1.jpg', ar: '3/4', alt: 'Dvoje dece u keceljama na kuvarskoj radionici' },
+      { cat: 'Radionice', src: 'images/veseli-puzic-radionica-za-stolom.jpg', ar: '4/3', alt: 'Deca za stolom tokom igre upoznavanja čula' },
+    ].map(g => ({ ...g, noSrc: !g.src }));
+    const f = this.state.filter;
+    return {
+      rootRef: this.rootRef,
+      headerRef: this.headerRef,
+      snailRef: this.snailRef, snailWrapRef: this.snailWrapRef, trailRef: this.trailRef,
+      scrollToTop: this.scrollToTop,
+      snailLabel: narrow ? 'Otvori meni' : 'Nazad na početak',
+      snailClick: () => {
+        if (!narrow) return this.scrollToTop();
+        const hd = this.headerRef.current;
+        if (hd) { this.navHidden = false; hd.style.transform = 'translateY(0)'; }
+        this.setState({ menuOpen: true });
+      },
+      showLabels: !!this.props.showLabels,
+      narrow, wide: !narrow,
+      heroAlign: narrow ? 'center' : 'flex-start', heroText: narrow ? 'center' : 'left',
+      docDir: narrow ? 'column' : 'row', docAlign: narrow ? 'center' : 'flex-start', docGap: narrow ? '6px' : '12px', docListGap: narrow ? '20px' : '12px',
+      formRowDir: narrow ? 'column-reverse' : 'row', submitW: narrow ? '100%' : 'auto',
+      igDir: narrow ? 'column' : 'row', igJustify: narrow ? 'center' : 'space-between',
+      locCols: narrow ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1.2fr)',
+      locMapAr: narrow ? '16/10' : '1/1',
+      locPad: narrow ? '4px 8px 12px' : '0',
+      mAlign: narrow ? 'center' : 'flex-start', mText: narrow ? 'center' : 'left',
+      showMenu: narrow && menuOpen,
+      menuOpenStr: String(menuOpen),
+      menuIcon: menuOpen ? 'M6 6l12 12 M18 6L6 18' : 'M4 7h16 M4 12h16 M4 17h16',
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      navLinks: [
+        { label: 'Početna', href: '#pocetna' }, { label: 'O nama', href: '#o-nama' },
+        { label: 'Program', href: '#program' }, { label: 'Galerija', href: '#galerija' },
+        { label: 'Upis', href: '#upis' }, { label: 'Kontakt', href: '#kontakt' },
+      ].map(l => {
+        const on = l.href === '#' + (this.state.active || 'pocetna');
+        return { ...l, current: on ? 'true' : undefined, bg: on ? 'rgba(51,36,26,.1)' : 'transparent' };
+      }),
+      benefits: [
+        { icon: I.shield, bg: '#DDEFC6', title: 'Verifikovana ustanova', text: 'Radimo po zvaničnim standardima i propisima.' },
+        { icon: I.pin, bg: '#F8D7D2', title: 'Dve lokacije', text: 'Naselje 9. maj i Duvanište.' },
+        { icon: I.bus, bg: '#D3ECF9', title: 'Putujući vrtić', text: 'Učimo i van vrtića — posete i izleti.' },
+        { icon: I.users, bg: '#FDE98F', title: 'Male grupe', text: '[Broj] dece po grupi, pažnja za svako dete.' },
+      ],
+      values: [
+        { icon: I.shield, bg: '#FDE98F', title: 'Sigurnost', text: 'Bezbedan prostor, stalan nadzor i jasna pravila koja deca razumeju.' },
+        { icon: I.ball, bg: '#DDEFC6', title: 'Igra', text: 'Kroz igru deca uče, istražuju i otkrivaju svet oko sebe.' },
+        { icon: I.heart, bg: '#F8D7D2', title: 'Toplina', text: 'Svako dete dočekujemo osmehom, po imenu i sa zagrljajem.' },
+        { icon: I.users, bg: '#D3ECF9', title: 'Saradnja sa roditeljima', text: 'Svakodnevno vas obaveštavamo i zajedno pratimo napredak deteta.' },
+      ],
+      stats: [
+        { num: '[X]', label: 'godina rada', color: '#D7352B' },
+        { num: '2', label: 'lokacije u Nišu', color: '#2F7A34' },
+        { num: '[X]', label: 'vaspitačica', color: '#9A5A32' },
+        { num: '[X]+', label: 'srećne dece', color: '#33241A' },
+      ],
+      groups: [
+        { age: '1–3 godine', bg: '#DDEFC6', title: 'Jaslice', text: 'Nežan početak: navikavanje, nega i prve igre uz stalnu blizinu vaspitačice.' },
+        { age: '3–5,5 godina', bg: '#FDE98F', title: 'Vrtićke grupe', text: 'Igra, radionice, muzika i druženje  deca uče da istražuju i sarađuju.' },
+        { age: '5,5–6,5 godina', bg: '#D3ECF9', title: 'Pripremni program', text: 'Razigrana priprema za školu: pažnja, grafomotorika, samostalnost.' },
+      ],
+      activities: [
+        { icon: I.eye, bg: '#FDE98F', title: 'Senzorne igre', text: 'Pogađamo mirise zatvorenih očiju, dodirujemo, slušamo i otkrivamo.' },
+        { icon: I.apple, bg: '#F8D7D2', title: 'Mali kuvari', text: 'Kecelje, jabuke i prve kuvarske radionice.' },
+        { icon: I.music, bg: '#D3ECF9', title: 'Muzički kutak', text: 'Pesmice, ritam i prvi instrumenti svakog dana.' },
+        { icon: I.smile, bg: '#DDEFC6', title: 'Lutke i predstave', text: 'Kostimi, lutke i male priredbe za hrabrost i maštu.' },
+        { icon: I.balloon, bg: '#F8D7D2', title: 'Proslave', text: 'Rođendani i praznici uz balone, pesmu i ples.' },
+        { icon: I.bus, bg: '#FDE98F', title: 'Putujući vrtić', text: 'Učimo van vrtića — posete, izleti i nova mesta.' },
+        { icon: I.brush, bg: '#DDEFC6', title: 'Likovne radionice', text: 'Boje, papir, makaze i lepak — stvaramo svojim rukama.' },
+        { icon: I.tree, bg: '#D3ECF9', title: 'Igra napolju', text: 'Svež vazduh i kretanje svakog dana kada vreme dozvoli.' },
+      ],
+      day: [
+        { time: '6:30', bg: '#FDE98F', title: 'Doček i slobodna igra', text: 'Dobro jutro uz osmeh i omiljene igračke.' },
+        { time: '8:00', bg: '#F8D7D2', title: 'Doručak', text: 'Zajedno za stolom, polako i bez žurbe.' },
+        { time: '9:00', bg: '#DDEFC6', title: 'Jutarnje aktivnosti', text: 'Radionice, muzika i učenje kroz igru.', here: true },
+        { time: '10:00', bg: '#D3ECF9', title: 'Užina i igra napolju', text: 'Voće, pa dvorište ili šetnja.' },
+        { time: '12:00', bg: '#F8D7D2', title: 'Ručak', text: 'Topao obrok pripremljen za decu.' },
+        { time: '12:30', bg: '#FDE98F', title: 'Odmor', text: 'Mirna muzika, priča i san.' },
+        { time: '15:00', bg: '#DDEFC6', title: 'Užina', text: 'Lagani popodnevni obrok.' },
+        { time: '15:30', bg: '#D3ECF9', title: 'Igra i rastanak', text: 'Igra u kutcima dok ne stigne mama ili tata.' },
+      ],
+      corners: [
+        { icon: I.music, bg: '#D3ECF9', title: 'Muzički kutak', text: 'Instrumenti i note na zidu' },
+        { icon: I.smile, bg: '#DDEFC6', title: 'Lutkarski kutak', text: 'Kostimi, lutke i scena' },
+        { icon: I.apple, bg: '#F8D7D2', title: 'Kutak za male kuvare', text: 'Kecelje i dečje posuđe' },
+        { icon: I.book, bg: '#FDE98F', title: 'Kutak za čitanje', text: 'Slikovnice i mekani jastuci' },
+      ],
+      filters: filters.map(label => ({
+        label, pressed: String(f === label),
+        bg: f === label ? '#33241A' : '#FFFAF0',
+        color: f === label ? '#FFFAF0' : '#33241A',
+        onClick: () => this.setState({ filter: label }),
+      })),
+      gallery: f === 'Svi' ? gallery : gallery.filter(g => g.cat === f),
+      locations: [
+        { n: '1', name: 'Naselje 9. maj', address: 'Jastrebačkih partizana 10', phone: '[064 000 0001]', tel: '+381640000001', mapSrc: 'https://maps.google.com/maps?q=43.3174185,21.8193789&z=16&output=embed', mapUrl: 'https://www.google.com/maps/place/Jastreba%C4%8Dkih+partizana+10,+Ni%C5%A1/@43.3174224,21.816804,17z/data=!3m1!4b1!4m5!3m4!1s0x4755b828d749bbe7:0x9a3901d00a76c280!8m2!3d43.3174185!4d21.8193789', alt: 'Ulaz u vrtić u Naselju 9. maj', mapAlt: 'Mapa lokacije Jastrebačkih partizana 10, Niš' },
+        { n: '2', name: 'Duvanište', address: 'Majakovskog 34', phone: '[064 000 0002]', tel: '+381640000002', mapSrc: 'https://maps.google.com/maps?q=43.3190448,21.9355412&z=16&output=embed', mapUrl: 'https://www.google.com/maps/place/Majakovskog+34,+Ni%C5%A1+018105/@43.3190487,21.9329663,17z/data=!3m1!4b1!4m6!3m5!1s0x4755b0f375738505:0xa5a57beb8803850d!8m2!3d43.3190448!4d21.9355412!16s%2Fg%2F11kx2b54t2', alt: 'Ulaz u vrtić na Duvaništu', mapAlt: 'Mapa lokacije Majakovskog 34, Niš' },
+      ].map(l => ({ ...l, noMap: !l.mapSrc })),
+      steps: [
+        { n: '1', title: 'Pošaljite upit', text: 'Popunite formular ili nas pozovite.' },
+        { n: '2', title: 'Upoznajmo se', text: 'Dogovaramo obilazak vrtića sa detetom.' },
+        { n: '3', title: 'Dokumentacija', text: 'Predajete dokumenta i potpisujemo ugovor.' },
+        { n: '4', title: 'Prvi dan', text: 'Polako, uz adaptaciju po meri deteta.' },
+      ],
+      docs: [
+        'Izvod iz matične knjige rođenja deteta',
+        'Lekarsko uverenje i potvrda o vakcinaciji',
+        'Fotokopija lične karte roditelja',
+        'Popunjena prijava za upis',
+        '[Ostala dokumenta — potvrditi]',
+      ],
+      notSent: !this.state.sent, sent: this.state.sent,
+      submit: e => { e.preventDefault(); this.setState({ sent: true }); },
+      reset: () => this.setState({ sent: false }),
+    };
+  }
+}
+</script>
+</body>
+</html>
